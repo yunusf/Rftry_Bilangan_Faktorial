@@ -5,10 +5,15 @@ function prosesBilFaktorial() {
 
     function faktorial(n) { 
         let a = 1;
-        for(i = 1; i <= n; i++) {
-            a *= i;
+        
+        if(n == 0) {
+            alert("angka tidak boleh 0");
+        } else {
+            for(i = 1; i <= n; i++) {
+                a *= i;
+            }
+            return a;   
         }
-        return a;   
     }
 
     let hasil_fakto = faktorial(id_angka);
